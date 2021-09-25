@@ -1,6 +1,6 @@
 #### Prequisite: ####
 
-Install latest [Named Link](https://nodejs.org/dist/v14.17.6/node-v14.17.6-x64.msi "Node")
+Install latest [Node](https://nodejs.org/dist/v14.17.6/node-v14.17.6-x64.msi "Node")
 
 ### Installation: ####
 
