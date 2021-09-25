@@ -15,5 +15,5 @@ Install latest [Named Link](https://nodejs.org/dist/v14.17.6/node-v14.17.6-x64.m
 2. Run the application in the browser using the URL `0.0.0.0:3000`
 
 #### Application layout ####
-`pages/index.js` -- Main
-    ------ `pages/ReactiveNavBar` ( Prevent unnecessary rendering of DOM Elements using reactive approach )
+`pages/index.js` - Home <br> 
+`pages/ReactiveNavBar` ( Component to demonstrate Prevent unnecessary rendering of DOM Elements using reactive approach )
