@@ -1,0 +1,86 @@
+.react_nav_menu {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  :global{
+
+    h2 {
+      flex-basis: 50%;
+    }
+
+    code {
+      flex-basis: 50%;
+      font-size: 30px;
+    }
+    #menu-container {
+      border: 1px;
+      background: #519aba;
+      width: 500px;
+      padding: 3px;
+      border-radius: 5px;
+      color: white;
+      user-select: none;
+      text-align: left;
+      text-transform: capitalize;
+      flex-basis: 49%;
+
+      .main-menu {
+        border: 5px solid;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 50px;
+      }
+
+      .main-menu,
+      .sub-menu,
+      .leaf-menu {
+        margin: 20px;
+      }
+
+      .sub-menu,
+      .leaf-menu {
+        /* display: none; */
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .active::before,
+      .sub-menu::before,
+      .main-menu::before {
+        float: right;
+        font-weight: bold;
+        margin-right: 10px;
+        font-size: 40px;
+        line-height: 12px;
+      }
+
+      .active::before {
+        content: "-" !important;
+      }
+
+      .sub-menu::before,
+      .main-menu::before {
+        content: "+";
+        line-height: 18px;
+        margin-right: 0;
+        font-size: 30px;
+      }
+
+      .active > .sub-menu,
+      .active > .leaf-menu {
+        display: block;
+      }
+
+      .leaf-menu::before {
+        text-align: center;
+        content: "" !important;
+      }
+    }
+  }
+}
